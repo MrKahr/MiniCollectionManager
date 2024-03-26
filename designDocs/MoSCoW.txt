@@ -1,4 +1,4 @@
-Preliminary MoSCoW
+MoSCoW
 
 Must have 
 - User can add new figure to collection 
@@ -21,8 +21,11 @@ Could have
 - System has web component that allows user to associate a collection with an account. 
 - System has colorscheme that users find appealing.
 - System can access database of colors and retailers of colors so they can order more. 
+- At least 50% of users tested find application usable. 
+- At least 50% of users tested find application comprehensible. 
 
 Would have 
 - System shows the status of brushes. 
 - System shows collection of paint to user.  
 - System has general database that all users can input new figures/colors/paints to. 
+- User can keep wishlist of figures they want to add to their collection. 
