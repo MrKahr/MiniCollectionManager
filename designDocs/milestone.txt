@@ -1,0 +1,9 @@
+This file contains the milestones/subgoals of the program
+
+These are of the format:
+
+GOALID - NICKNAME (DATE-COMPLETED)
+feature 1
+feature 2
+...
+feature n
