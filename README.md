@@ -1,4 +1,4 @@
-## Wargame Collection Manager
+## Mini Collection Manager
 A desktop application for tracking your collection of wargame figures.
 
 ## Folder Structure
