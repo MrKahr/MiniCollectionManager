@@ -1,0 +1,31 @@
+MoSCoW
+
+Must have 
+- User can add new figure to collection 
+- User can add mount to figure
+- User can set status of figure construction (out of spruce, assembled, based, basecoated, shaded, varnished)
+- System alerts user when figure is completed 
+- System keeps track of when user started painting figure
+- System keeps collections ordered by system 
+
+Should have 
+- System shows percentages of how many figures of our collection is painted  
+- System allows user to input which colors a figure should be applied with 
+- System checks whether colors have been used on figure. 
+- System can order collection by multiple criteria.
+
+Could have 
+- System can track status of "greenstuff" 
+- System can track status of "materials" for bases. 
+- System has UI showing a generic figure and where paint has been applied to this figure 
+- System has web component that allows user to associate a collection with an account. 
+- System has colorscheme that users find appealing.
+- System can access database of colors and retailers of colors so they can order more. 
+- At least 50% of users tested find application usable. 
+- At least 50% of users tested find application comprehensible. 
+
+Would have 
+- System shows the status of brushes. 
+- System shows collection of paint to user.  
+- System has general database that all users can input new figures/colors/paints to. 
+- User can keep wishlist of figures they want to add to their collection. 
