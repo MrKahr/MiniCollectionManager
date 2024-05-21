@@ -1,9 +1,17 @@
 This file contains the milestones/subgoals of the program
 
 These are of the format:
-
 GOALID - NICKNAME (DATE-COMPLETED)
 feature 1
 feature 2
 ...
 feature n
+
+
+** Milestones **
+----------------
+1 - HelloMini ()
+Figures objects can be instantiated
+Colors, varnish and base coats can be added to figures. 
+User can interact with a CLI that lists possible functions that can be called. 
+User can see figure details in terminal for each figure in a single system. 
