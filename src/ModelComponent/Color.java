@@ -1,25 +1,18 @@
 package ModelComponent;
 
-public class Color {
+public class Color extends Coat {
     // FIELD
-    private String manifacturer;
-    private String color; 
-    private int price;
+    String colorCode;
 
     // CONSTRUCTOR
-    private Color(){}
+    private Color(String id, String manifacturer, float price, String colorCode){
+        super(id, manifacturer, price);
+        this.colorCode = colorCode;
+    }
 
     // METHOD
-    public String getManifacturer() {
-        return manifacturer;
-    }
-
-    public String getColor() {
-        return color;
-    }
-
-    public int getPrice() {
-        return price;
+    public String getColorCode() {
+        return colorCode;
     }
 
 }

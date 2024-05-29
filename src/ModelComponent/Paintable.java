@@ -1,5 +1,5 @@
 package ModelComponent;
 
 public interface Paintable {
-    public void addColor(Color color);
+    public void applyLayer(FigureComponent figureComponent, Coat coat);
 }

@@ -1,4 +1,9 @@
 package ModelComponent;
 
-public abstract class Figure {
+public class Figure {
+    // Field 
+
+    // Constructor 
+
+    // Method 
 }
