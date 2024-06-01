@@ -4,10 +4,10 @@ public abstract class Coat {
     // Field 
     private String id;
     private String manifacturer;
-    private float price;
+    private double price;
 
     // Constructor 
-    Coat(String id, String manifacturer, float price){
+    Coat(String id, String manifacturer, double price){
         this.id = id; 
         this.manifacturer = manifacturer;
         this.price = price;
@@ -30,11 +30,11 @@ public abstract class Coat {
         this.manifacturer = manifacturer;
     }
 
-    public float getPrice() {
+    public double getPrice() {
         return price;
     }
 
-    void setPrice(float price){
+    void setPrice(double price){
         this.price = price;
     }
 }

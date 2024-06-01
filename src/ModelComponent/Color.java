@@ -5,7 +5,7 @@ public class Color extends Coat {
     String colorCode;
 
     // CONSTRUCTOR
-    private Color(String id, String manifacturer, float price, String colorCode){
+    public Color(String id, String manifacturer, double price, String colorCode){
         super(id, manifacturer, price);
         this.colorCode = colorCode;
     }
