@@ -2,20 +2,20 @@ package ModelComponent;
 
 import java.util.HashMap;
 
-public class Collection {
+public class FigureCollection {
     // FIELD
-    private static Collection instance;
+    private static FigureCollection instance;
     private HashMap<String, Figure> figureMap;
 
     // CONSTURCTOR
-    Collection() {
+    FigureCollection() {
         figureMap = new HashMap<String, Figure>();
     }
 
     // METHOD
-    public static Collection getInstance() {
+    public static FigureCollection getInstance() {
         if (instance == null) {
-            instance = new Collection();
+            instance = new FigureCollection();
 
         }
         return instance;
@@ -23,6 +23,17 @@ public class Collection {
 
     public HashMap<String, Figure> getFigureMap() {
         return figureMap;
+    }
+
+    public static void printFigure(String key){
+        System.out.println(instance.figureMap.get(key));
+    }
+
+    public static void printCollection(){
+        System.out.println("Your current collection contains:");
+        for (String figureIdentifier : instance.getFigureMap().keySet()){
+            System.out.println(figureIdentifier);
+        }
     }
 
     public void addFigure(){
