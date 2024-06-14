@@ -10,8 +10,10 @@ feature n
 
 ** Milestones **
 ----------------
-1 - HelloMini ()
+1 - HelloMini (14/06/2024)
 Figures objects can be instantiated
 Colors, varnish and base coats can be added to figures. 
 User can interact with a CLI that lists possible functions that can be called. 
-User can see figure details in terminal for each figure in a single system. 
+User can see figure details in terminal for each figure in a single system.
+
+2 - FiguresGalore 
