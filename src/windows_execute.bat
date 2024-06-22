@@ -7,25 +7,24 @@ SET TARGETDIRECTORY=%SOURCEDIRECTORY%out
 
 :BUILD_OUT_FILE
 IF NOT EXIST %TARGETDIRECTORY% (
-    ECHO CREATING OUT FOLDER
+    ECHO CREATING OUT FOLDER FOR APP
     MKDIR %TARGETDIRECTORY%
 ) ELSE (
-    ECHO OUT FOLDER ALREADY EXISTS
+    ECHO OUT FOLDER FOR APP ALREADY EXISTS
 )
 
 :COMPILE_JAVA
 REM Handle compilation errors
 REM NOTE that cmd parses directories without "" string syntax. 
-javac -d %TARGETDIRECTORY% -g -sourcepath %SOURCEDIRECTORY% %COMPILEDIRECTORY%  || GOTO COMPILATION_FALIURE
+ECHO GENERATING JAR FILE FOR APP
+javac -d %TARGETDIRECTORY% -g -sourcepath %SOURCEDIRECTORY% %COMPILEDIRECTORY%  || (ECHO COMPILATION FAILED GOTO EXECUTABLE_GENERATION_END)
 
 REM File must end in new line or carriage to be parsed properly - see https://docs.oracle.com/javase/tutorial/deployment/jar/appman.html 
 REM Logical expressions is a canonical way of error handling in batch - see https://en.wikibooks.org/wiki/Windows_Batch_Scripting#Error_level
-REM jar cfe MiniCollectionManager.jar   (GOTO COMPILATION_FALIURE)
+ECHO RUNNING APPLICATION
+jar cfe App.jar App * || (ECHO JAR CREATION FAILED GOTO EXECUTABLE_GENERATION_END)
+:EXECUTABLE_GENERATION_END
 
-
-:COMPILATION_SUCCESSFUL
-ECHO EXECUTABLE GENERATED SUCCESSFULLY 
-
-:COMPILATION_FALIURE
-ECHO COMPLIATION FAILED
+java -jar %TARGETDIRECTORY%\App.jar
+REM Always give user opportunity to see errors
 pause
