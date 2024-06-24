@@ -1,17 +1,17 @@
-package ModelComponent;
+package Figures;
 
 public class Color extends Coat {
     // FIELD
-    String colorCode;
+    Integer colorCode;
 
     // CONSTRUCTOR
-    public Color(String id, String manifacturer, double price, String colorCode){
+    public Color(Integer id, String manifacturer, double price, Integer colorCode){
         super(id, manifacturer, price);
         this.colorCode = colorCode;
     }
-
+    
     // METHOD
-    public String getColorCode() {
+    public Integer getColorCode() {
         return colorCode;
     }
 

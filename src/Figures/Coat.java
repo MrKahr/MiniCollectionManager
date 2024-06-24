@@ -1,24 +1,24 @@
-package ModelComponent;
+package Figures;
 
 public abstract class Coat {
     // Field 
-    private String id;
+    private Integer id;
     private String manifacturer;
     private double price;
 
     // Constructor 
-    Coat(String id, String manifacturer, double price){
+    Coat(Integer id, String manifacturer, double price){
         this.id = id; 
         this.manifacturer = manifacturer;
         this.price = price;
     }
 
     // Method 
-    public String getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 

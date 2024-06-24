@@ -1,4 +1,4 @@
-package ModelComponent;
+package Figures;
 
 public interface Paintable {
     public void applyCoat(Coat coat);

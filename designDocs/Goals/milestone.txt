@@ -16,4 +16,27 @@ Colors, varnish and base coats can be added to figures.
 User can interact with a CLI that lists possible functions that can be called. 
 User can see figure details in terminal for each figure in a single system.
 
+1.1 - Jarhead (22/06/2024)
+User can run batch script on windows to compile, create jar file and run application. 
+
 2 - FiguresGalore 
+System can build figure from parts and reject invalid parts/parts already attached using appropriate design pattern (factory pattern + observer + composite pattern + builderpattern?)
+System can divide figures into appropriate collections and subsystem 
+System keeps track of status of figure 
+
+3 - DocStringsGalore 
+System documents every non-setter and getter method in systems package. 
+System documents purpose of app 
+Github is update with purpose of application, planned features/filestones (look into check marks instead of raw text file) 
+
+x - GettingInTheSwingOfThings  
+System can show simple UI of current collection (Java swing)
+System shows alert to user when figure is created
+
+y - TestingFigures 
+System has unit tests for every and class combination (look at Gabriela's testing strategy)
+System displays unit test coverage
+System system tests batch script 
+
+
+

@@ -1,15 +1,15 @@
-package ModelComponent;
+package Figures;
 
 import java.util.HashMap;
 
 public class FigureCollection {
     // FIELD
     private static FigureCollection instance;
-    private HashMap<String, Figure> figureMap;
+    private HashMap<Long, Figure> figureMap;
 
     // CONSTURCTOR
     FigureCollection() {
-        figureMap = new HashMap<String, Figure>();
+        figureMap = new HashMap<Long, Figure>();
     }
 
     // METHOD
@@ -21,23 +21,23 @@ public class FigureCollection {
         return instance;
     }
 
-    public HashMap<String, Figure> getFigureMap() {
+    public HashMap<Long, Figure> getFigureMap() {
         return figureMap;
     }
 
-    public static void printFigure(String key){
+    public void printFigure(Long key){
         System.out.println(instance.figureMap.get(key));
     }
 
-    public static void printCollection(){
+    public void printCollection(){
         System.out.println("Your current collection contains:");
-        for (String figureIdentifier : instance.getFigureMap().keySet()){
+        for (Long figureIdentifier : instance.getFigureMap().keySet()){
             System.out.println(figureIdentifier);
         }
     }
 
-    public void addFigure(){
-        figureMap.put("",new Figure());
+    public void addFigure(Figure figure){
+        this.figureMap.put(figure.getId(), figure);
     }
 
     public void removeFigure(Figure figure){
