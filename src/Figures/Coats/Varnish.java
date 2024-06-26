@@ -9,4 +9,8 @@ public class Varnish extends Coat {
         }
     
         // METHOD
+        @Override
+        public void print() {
+            System.out.println(super.getId() +  super.getManifacturer() + super.getPrice()); 
+        }
 }

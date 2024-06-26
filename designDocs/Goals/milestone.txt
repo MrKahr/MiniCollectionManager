@@ -20,23 +20,40 @@ User can see figure details in terminal for each figure in a single system.
 User can run batch script on windows to compile, create jar file and run application. 
 
 2 - FiguresGalore 
-System can build figure from parts and reject invalid parts/parts already attached using appropriate design pattern (factory pattern + observer + composite pattern + builderpattern?)
-System can divide figures into appropriate collections and subsystem 
+System can build figure from parts
+System can validate figure with tree traversal/reject invalid parts/parts already attached using appropriate design pattern (factory pattern + observer + composite pattern + builderpattern?)
+System can divide figures into appropriate collections and subsystem - DONE!
 System keeps track of status of figure 
 
 3 - DocStringsGalore 
-System documents every non-setter and getter method in systems package. 
-System documents purpose of app 
-Github is update with purpose of application, planned features/filestones (look into check marks instead of raw text file) 
+System documents every non-setter and getter method in "Figures" package. 
+System documents purpose of app. 
+Github is updated with purpose of the app, milestones, planned features (markdown instead of raw file).
 
-x - GettingInTheSwingOfThings  
-System can show simple UI of current collection (Java swing)
-System shows alert to user when figure is created
-
-y - TestingFigures 
+4 - TestingFigures 
 System has unit tests for every and class combination (look at Gabriela's testing strategy)
 System displays unit test coverage
 System system tests batch script 
+
+x - GettingInTheSwingOfThings  
+System can show simple UI of current collection (Java swing)
+System can navigate between systems in collection 
+System shows alert to user when figure is created
+Users can add and remove figures in UI 
+Users can select single figure 
+Users can see coats applied to figure represented as circles in UI
+Users can see figures 
+
+z - LightenUpItsJustModelling  
+Ensure UML diagram matches v 0.2 of apllication. 
+
+y - mumumultiprogramming! 
+
+
+FEATURECREEP - IMPLEMENT AT YOUR OWN RISK!
+TODO: Implement cloneable s.t. system may make shallow copies of figures - there may be multiple of the same figure type e.g. three elven archers
+TODO: Add mutex to id generator
+TODO: Implement uniformally distributed random number generator - time is not a secure way of generating ids
 
 
 

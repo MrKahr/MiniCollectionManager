@@ -1,8 +1,8 @@
-package Figures;
+package Figures.Coats;
 
 public abstract class Coat {
     // Field 
-    private Integer id;
+    protected Integer id;
     private String manifacturer;
     private double price;
 
@@ -34,7 +34,9 @@ public abstract class Coat {
         return price;
     }
 
-    void setPrice(double price){
+    public void setPrice(double price){
         this.price = price;
     }
+
+    public abstract void print();
 }

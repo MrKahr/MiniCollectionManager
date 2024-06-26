@@ -1,8 +1,17 @@
 ## Mini Collection Manager
 A desktop application for tracking your collection of miniature figures.
 
-## Folder Structure
+## Dependencies 
+This application was tested with/has dependencies: 
+- JDK (21) 
+- Java Swing ()
+- Java (21.0.2 2024-01-16 LTS)
 
+## How to run 
+1) Naviage to the source folder of the project. 
+2) Run windows_execute.bat
+
+## Folder Structure
 The workspace contains three folders by default, where:
 
 - `src`: the folder to maintain sources
@@ -12,4 +21,4 @@ The workspace contains three folders by default, where:
 The compiled output files will be generated in the `bin` folder by default.
 
 ### IMPORTANT DISCLAIMER ###
-This application is developed by a single person, and is not associated with any wargames retailer. 
+This application is developed by a single person, and is not associated with any mini retailer. 
