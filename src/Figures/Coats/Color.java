@@ -1,12 +1,12 @@
-package Figures;
+package Figures.Coats;
 
 public class Color extends Coat {
     // FIELD
     String colorCode;
 
     // CONSTRUCTOR
-    public Color(Integer id, String manifacturer, double price, String colorCode){
-        super(id, manifacturer, price);
+    public Color(String name, Integer id, String manifacturer, double price, String colorCode){
+        super(name,id, manifacturer, price);
         this.colorCode = colorCode;
     }
     

@@ -1,4 +1,4 @@
-package Figures;
+package Figures.Parts;
 
 public class Base {
     

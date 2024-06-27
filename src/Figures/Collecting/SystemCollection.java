@@ -1,4 +1,4 @@
-package Figures.FigureCollections;
+package Figures.Collecting;
 
 import java.util.HashMap;
 

@@ -1,9 +1,9 @@
-package Figures.FigureCollections;
+package Figures.Collecting;
 
 import java.util.HashMap;
 import java.util.Map;
 
-import Figures.Figure;
+import Figures.Types.Figure;
 
 public class FigureCollection {
     // FIELD 

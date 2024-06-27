@@ -1,19 +1,25 @@
 package Figures.Coats;
 
 public abstract class Coat {
-    // Field 
-    protected Integer id;
+    // Field
+    private String name; 
+    private Integer id;
     private String manifacturer;
     private double price;
 
     // Constructor 
-    Coat(Integer id, String manifacturer, double price){
+    Coat(String name, Integer id, String manifacturer, double price){
+        this.name = name;
         this.id = id; 
         this.manifacturer = manifacturer;
         this.price = price;
     }
 
     // Method 
+    public String getName() {
+        return name;
+    }
+    
     public Integer getId() {
         return id;
     }

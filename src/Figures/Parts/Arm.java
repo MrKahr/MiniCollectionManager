@@ -1,4 +1,4 @@
-package Figures.FigureParts;
+package Figures.Parts;
 
 public class Arm extends FigurePart {
     

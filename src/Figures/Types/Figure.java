@@ -1,42 +1,38 @@
 package Figures.Types;
 
 import java.time.Instant;
+import Figures.FigureStatus;
+import Figures.Creation.*;
+import Figures.Parts.*;
+
 // TODO: Implement cloneable s.t. system may make shallow copies of figures - there may be multiple of the same figure type e.g. three elven archers
 // TODO: Add mutex to id generator
 // TODO: Implement uniformally distributed random number generator - time is not a secure way of generating ids 
-import Figures.FigureStatus;
-import Figures.Creation.Coater;
-import Figures.Creation.Creator;
-import Figures.Parts.Arm;
-import Figures.Parts.Body;
-import Figures.Parts.Head;
-import Figures.Parts.Leg;
-
-import Figures.Parts.Weapon;
 
 /* Abstraction part of bridge pattern */
 public abstract class Figure {
     // Field 
-    private final long id; 
-    private Double price;
-    private FigureStatus status;
-    private Head head;
-    private Arm rightarm;
-    private Arm leftarm;
-    private Body body;
-    private Leg rightleg;
-    private Leg leftleg;
-    private Weapon weapon;
-    private Creator creator;
-    private Coater coater;
-
-
+    protected final long id; 
+    protected Double price;
+    protected FigureStatus status;
+    protected Creator creator;
+    protected Coater coater;
+    protected Head head;
+    protected Arm rightarm;
+    protected Arm leftarm;
+    protected Body body;
+    protected Leg rightleg;
+    protected Leg leftleg;
+    protected Weapon weapon;
+ 
     // Constructor 
     public Figure(){
         // Secure enough for current id generation
         id = Instant.now().getEpochSecond();
         price = 0.0;
         this.status = FigureStatus.INSPRUCE;
+        // this.creator = 
+        this.coater = new ColorCoater();
     }
 
     public Figure(Double price){
@@ -51,8 +47,92 @@ public abstract class Figure {
         return id;
     }
 
+    public Double getPrice() {
+        return price;
+    }
+
+    public FigureStatus getStatus() {
+        return status;
+    }
+
+    public Creator getCreator() {
+        return creator;
+    }
+
+    public Coater getCoater() {
+        return coater;
+    }
+
+    public Head getHead() {
+        return head;
+    }
+
+    public Arm getRightarm() {
+        return rightarm;
+    }
+
+    public Arm getLeftarm() {
+        return leftarm;
+    }
+
+    public Body getBody() {
+        return body;
+    }
+
+    public Leg getRightleg() {
+        return rightleg;
+    }
+
+    public Leg getLeftleg() {
+        return leftleg;
+    }
+
+    public Weapon getWeapon() {
+        return weapon;
+    }
+
+    public void setPrice(Double price) {
+        this.price = price;
+    }
+
     public void setStatus(FigureStatus status) {
         this.status = status;
+    }
+
+    public void setCreator(Creator creator) {
+        this.creator = creator;
+    }
+
+    public void setCoater(Coater coater) {
+        this.coater = coater;
+    }
+
+    public void setHead(Head head) {
+        this.head = head;
+    }
+
+    public void setRightarm(Arm rightarm) {
+        this.rightarm = rightarm;
+    }
+
+    public void setLeftarm(Arm leftarm) {
+        this.leftarm = leftarm;
+    }
+
+    public void setBody(Body body) {
+        this.body = body;
+    }
+
+    public void setRightleg(Leg rightleg) {
+        this.rightleg = rightleg;
+    }
+
+    public void setLeftleg(Leg leftleg) {
+        this.leftleg = leftleg;
+    }
+
+    public void setWeapon(Weapon weapon) {
+        this.weapon = weapon;
     }
 
     public void print(){

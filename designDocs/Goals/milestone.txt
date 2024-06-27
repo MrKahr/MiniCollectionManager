@@ -20,10 +20,10 @@ User can see figure details in terminal for each figure in a single system.
 User can run batch script on windows to compile, create jar file and run application. 
 
 2 - FiguresGalore 
-System can build figure from parts
-System can validate figure with tree traversal/reject invalid parts/parts already attached using appropriate design pattern (factory pattern + observer + composite pattern + builderpattern?)
+System can build figure from parts - DONE!
+System can validate figure reject invalid parts/parts already attached using appropriate design pattern (observer, chain of responsiblity)
 System can divide figures into appropriate collections and subsystem - DONE!
-System keeps track of status of figure 
+System can update status of figure if figure is fully assemled, has primer on each layer, has primer on each layer etc.
 
 3 - DocStringsGalore 
 System documents every non-setter and getter method in "Figures" package. 
@@ -33,6 +33,7 @@ Github is updated with purpose of the app, milestones, planned features (markdow
 4 - TestingFigures 
 System has unit tests for every and class combination (look at Gabriela's testing strategy)
 System displays unit test coverage
+System provides appropriate exceptions for all classes. 
 System system tests batch script 
 
 x - GettingInTheSwingOfThings  

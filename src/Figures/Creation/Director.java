@@ -1,23 +1,26 @@
 package Figures.Creation;
 
 /*Director part of a builder pattern */
-public class Director {
+public class Director implements Creator {
     //FIELD 
-    private Builder builder; 
+    private FigureBuilder figureBuilder; 
 
     //CONSTRUCTOR
-    Director(Builder builder){
-        this.builder = builder;
+    Director(FigureBuilder builder){
+        this.figureBuilder = builder;
     } 
 
     //METHOD 
-    private void setBuilder(Builder builder){
-        this.builder = builder;
+    private void setBuilder(FigureBuilder figureBuilder){
+        this.figureBuilder = figureBuilder;
     }
-    public void makeMeleeInfantry(){
+    public void MakeInfantry(FigureBuilder figureBuilder){
         
     }
-    //public void makeRangedInfantry();
-    //public void makeCavalry();
-    //public void makeMonster();
+    public void MakeCavalry(FigureBuilder figureBuilder){
+
+    }
+    public void makeMonster(FigureBuilder figureBuilder){
+        
+    }
 }

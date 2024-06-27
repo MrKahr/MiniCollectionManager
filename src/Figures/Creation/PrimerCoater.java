@@ -1,32 +1,41 @@
 package Figures.Creation;
 
+import FigureExpections.IllegalDuplicateElementException;
 import Figures.Coats.Coat;
+import Figures.Coats.Color;
 import Figures.Coats.Primer;
 import Figures.Parts.FigurePart;
 
 public class PrimerCoater extends Coater {
+    // FIELD
+    // CONSTRUCTOR 
+    // METHOD 
     @Override
      public void applyCoat(FigurePart figurePart, Coat coat){
-        if (figurePart.getCoats().contains(coat) || figurePart.getCoats().size() > 1) {
-            System.out.println("Coat is already applied");
+        if (figurePart.getColors().contains(coat)) {
+            throw new IllegalDuplicateElementException("Figure already has " + coat.getId() + " applied to it!");
+        } else if(!(coat instanceof Primer)){
+            throw new IllegalArgumentException("Cannot apply " + Coat.class + " as color!");
         } else {
-            figurePart.getCoats().add((Primer)coat);
+            figurePart.getPrimers().add((Primer)coat);
         }
     }
-
+    
     @Override
-    public void removeCoat(FigurePart figurePart, Coat coat) {
-        if (!(figurePart.getCoats().contains(coat))) {
-            System.out.println("Coat has is not applied");
+    public void removeCoat(FigurePart figurePart, Coat coat){
+        if (!figurePart.getPrimers().contains(coat)) {
+            throw new IllegalDuplicateElementException("Figure did not have " + coat.getName() + " applied to it!");
+        } else if(!(coat instanceof Primer)){
+            throw new IllegalArgumentException("Cannot apply " + Coat.class + " as color!");
         } else {
-            figurePart.getCoats().remove(coat);
+            figurePart.getPrimers().add((Primer)coat);
         }
     }
 
     @Override
     public void showCoats(FigurePart figurePart) {
-        for (Coat coat : figurePart.getCoats()) {
-            System.out.println(coat);
+        for (Coat primer : figurePart.getPrimers()) {
+            System.out.println(primer);
         }
     }
 }

@@ -1,5 +1,5 @@
-package Figures;
+package Figures.Parts;
 
-public class Body {
+public class Body extends FigurePart {
     
 }
