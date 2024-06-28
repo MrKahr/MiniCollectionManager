@@ -21,21 +21,21 @@ This application is developed by a single person, and is not associated with any
 
 ## Milestones completed
 ### HelloMini - (14/06/2024)
-- [x ]  System can instantiate figures
-- [x ]  Colors, varnish and base coats can be added to figures
-- [x ]  User can interact with a CLI that lists possible functions that can be called.
-- [x ]  User can see figure details in terminal for each figure in a single system.
+- [x]  System can instantiate figures
+- [x]  Colors, varnish and base coats can be added to figures
+- [x]  User can interact with a CLI that lists possible functions that can be called.
+- [x]  User can see figure details in terminal for each figure in a single system.
 ### Jarhead (22/06/2024)
-- [x ] User can run batch script on windows to compile, create jar file and run application.
+- [x] User can run batch script on windows to compile, create jar file and run application.
 ### FiguresGalore
-- [x ] System can build figure from parts
+- [x] System can build figure from parts
 - [ ] System can validate figure reject invalid parts/parts already attached using appropriate design pattern (observer, chain of responsiblity)
-- [x ] System can divide figures into appropriate collections and subsystem
+- [x] System can divide figures into appropriate collections and subsystem
 - [ ]System can update status of figure if figure is fully assemled, has primer on each layer, has primer on each layer etc.
 ### DocStringsGalore 
 - [ ] System documents every non-setter and getter method in "Figures" package. 
 - [ ] System documents purpose of app. 
-- [x ] Github is updated with purpose of the app, milestones, features (markdown instead of raw file).
+- [x] Github is updated with purpose of the app, milestones, features (markdown instead of raw file).
 ### TestingFigures 
 - [ ] System has unit tests for every and class combination (look at Gabriela's testing strategy)
 - [ ] System displays unit test coverage
