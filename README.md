@@ -1,8 +1,10 @@
-## Mini Collection Manager
+# Mini Collection Manager
 A desktop application for tracking your collection of miniature figures.
 
-## Folder Structure
+## Features 
+- 
 
+## Folder Structure
 The workspace contains three folders by default, where:
 
 - `src`: the folder to maintain sources
@@ -11,5 +13,15 @@ The workspace contains three folders by default, where:
 
 The compiled output files will be generated in the `bin` folder by default.
 
-### IMPORTANT DISCLAIMER ###
+## Bugs
+- [ ]
+
+
+### IMPORTANT DISCLAIMER
 This application is developed by a single person, and is not associated with any wargames retailer. 
+
+
+## Milestones completed
+### HelloMini - (14/06/2024)
+- [ ]  
+- [ ]  
