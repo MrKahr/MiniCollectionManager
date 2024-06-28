@@ -14,7 +14,7 @@ The workspace contains three folders by default, where:
 The compiled output files will be generated in the `bin` folder by default.
 
 ## Known Bugs
-- [ ]
+- [ ] TBD
 
 ### IMPORTANT DISCLAIMER
 This application is developed by a single person, and is not associated with any wargames retailer. 
@@ -31,7 +31,7 @@ This application is developed by a single person, and is not associated with any
 - [x] System can build figure from parts
 - [ ] System can validate figure reject invalid parts/parts already attached using appropriate design pattern (observer, chain of responsiblity)
 - [x] System can divide figures into appropriate collections and subsystem
-- [ ]System can update status of figure if figure is fully assemled, has primer on each layer, has primer on each layer etc.
+- [ ] System can update status of figure if figure is fully assemled, has primer on each layer, has primer on each layer etc.
 ### DocStringsGalore 
 - [ ] System documents every non-setter and getter method in "Figures" package. 
 - [ ] System documents purpose of app. 
@@ -46,14 +46,14 @@ This application is developed by a single person, and is not associated with any
 - [ ] Check which categories they have/which elements are common to each category
 - [ ] Update system classes to reflect these categories. 
 ### GettingInTheSwingOfThings  
-System can show simple UI of current collection (Java swing)
-System can navigate between systems in collection 
-System shows alert to user when figure is created
-Users can add and remove figures in UI 
-Users can select single figure 
-Users can see coats applied to figure represented as circles in UI
-Users can see figures 
+- [ ] System can show simple UI of current collection (Java swing)
+- [ ] System can navigate between systems in collection 
+- [ ] System shows alert to user when figure is created
+- [ ] Users can add and remove figures in UI 
+- [ ] Users can select single figure 
+- [ ] Users can see coats applied to figure represented as circles in UI
+- [ ] Users can see figures 
 ### LightenUpItsJustModelling  
-Ensure UML diagram matches v 0.2 of apllication. 
+- [ ] Ensure UML diagram matches v 0.2 of apllication. 
 ### Mumumultiprogramming! 
 
