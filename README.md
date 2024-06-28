@@ -32,15 +32,14 @@ This application is developed by a single person, and is not associated with any
 - [ ] System can validate figure reject invalid parts/parts already attached using appropriate design pattern (observer, chain of responsiblity)
 - [x] System can divide figures into appropriate collections and subsystem
 - [ ] System can update status of figure if figure is fully assemled, has primer on each layer, has primer on each layer etc.
-### DocStringsGalore 
-- [ ] System documents every non-setter and getter method in "Figures" package. 
-- [ ] System documents purpose of app. 
-- [x] Github is updated with purpose of the app, milestones, features (markdown instead of raw file).
 ### TestingFigures 
-- [ ] System has unit tests for every and class combination (look at Gabriela's testing strategy)
-- [ ] System displays unit test coverage
+- [ ] System has unit tests for every and class combination (look at Gabriela's testing strategy).
+- [ ] System displays unit test coverage.
 - [ ] System provides appropriate exceptions for all classes. 
-- [ ] System system tests batch script
+- [ ] System system tests batch script.
+### DocStringsGalore 
+- [ ] System documents every method with minimally purpose, pre- and post conditions and expections. 
+- [x] Github is updated with purpose of the app, milestones, features (markdown instead of raw file).
 ### Research figures
 - [ ] Find the 5 most popular figure system 
 - [ ] Check which categories they have/which elements are common to each category
