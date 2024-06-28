@@ -1,7 +1,9 @@
-package Figures.Creation;
+package figures.creation;
 
-import Figures.Parts.*;
-import Figures.Types.Infantry;
+import figures.FigureMaterial;
+import figures.FigureStatus;
+import figures.parts.*;
+import figures.types.Infantry;
 
 public class InfantryBuilder extends FigureBuilder {
     // FIELD 
@@ -13,6 +15,20 @@ public class InfantryBuilder extends FigureBuilder {
     }
 
     // METHOD 
+    @Override
+    public void setPrice(Double price) {
+        infantry.setPrice(price);
+    }
+    @Override
+    public void setFigureMaterial(FigureMaterial figureMaterial) {
+        infantry.setFigureMaterial(figureMaterial);
+    }
+
+    @Override
+    public void setFigureStatus(FigureStatus figureStatus) {
+        infantry.setStatus(figureStatus);
+    }
+ 
     @Override
     public void reset() {
         this.infantry = new Infantry();

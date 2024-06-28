@@ -1,4 +1,4 @@
-package Interfaces.UserInterface;
+package interfaces.userInterface;
 
 public enum FunctionOption {
     ADDCOAT, 

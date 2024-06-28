@@ -1,15 +1,19 @@
-package Figures.Creation;
+package figures.creation;
 
-import Figures.Parts.Arm;
-import Figures.Parts.Body;
-import Figures.Parts.Head;
-import Figures.Parts.Leg;
-import Figures.Parts.Weapon;
+import figures.FigureMaterial;
+import figures.FigureStatus;
+import figures.parts.Arm;
+import figures.parts.Body;
+import figures.parts.Head;
+import figures.parts.Leg;
+import figures.parts.Weapon;
 
 public abstract class FigureBuilder implements Creator {
     //FIELD 
-    // CONSTRUCTOR
     // METHOD 
+    public abstract void setPrice(Double price);
+    public abstract void setFigureMaterial(FigureMaterial figureMaterial);
+    public abstract void setFigureStatus(FigureStatus figureStatus);
     public abstract void reset();
     public abstract void setCreator(Creator creater);
     public abstract void setCoater(Coater coater);

@@ -1,13 +1,13 @@
-package Figures.Creation;
+package figures.creation;
 
-import java.lang.Thread.Builder;
-
-import Figures.Parts.Arm;
-import Figures.Parts.Body;
-import Figures.Parts.Head;
-import Figures.Parts.Leg;
-import Figures.Parts.Weapon;
-import Figures.Types.Cavalry;
+import figures.FigureMaterial;
+import figures.FigureStatus;
+import figures.parts.Arm;
+import figures.parts.Body;
+import figures.parts.Head;
+import figures.parts.Leg;
+import figures.parts.Weapon;
+import figures.types.Cavalry;
 
 public class CavalryBuilder extends FigureBuilder {
     // FIELD 
@@ -17,6 +17,20 @@ public class CavalryBuilder extends FigureBuilder {
         this.cavalry = new Cavalry();
     }
     // METHOD 
+    @Override
+    public void setPrice(Double price) {
+        cavalry.setPrice(price);
+    }
+    @Override
+    public void setFigureMaterial(FigureMaterial figureMaterial) {
+        cavalry.setFigureMaterial(figureMaterial);
+    }
+
+    @Override
+    public void setFigureStatus(FigureStatus figureStatus) {
+        cavalry.setStatus(figureStatus);
+    }
+ 
     @Override
     public void reset() {
         this.cavalry = new Cavalry();

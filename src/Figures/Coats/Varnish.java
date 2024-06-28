@@ -1,4 +1,4 @@
-package Figures.Coats;
+package figures.coats;
 
 public class Varnish extends Coat {
         // FIELD

@@ -1,4 +1,4 @@
-package Figures.Types;
+package figures.types;
 
 public class Infantry extends Figure {
     

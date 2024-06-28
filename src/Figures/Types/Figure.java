@@ -1,19 +1,21 @@
-package Figures.Types;
+package figures.types;
 
 import java.time.Instant;
-import Figures.FigureStatus;
-import Figures.Creation.*;
-import Figures.Parts.*;
+import figures.FigureMaterial;
+import figures.FigureStatus;
+import figures.creation.*;
+import figures.parts.*;
 
 // TODO: Implement cloneable s.t. system may make shallow copies of figures - there may be multiple of the same figure type e.g. three elven archers
 // TODO: Add mutex to id generator
 // TODO: Implement uniformally distributed random number generator - time is not a secure way of generating ids 
 
 /* Abstraction part of bridge pattern */
-public abstract class Figure {
+public class Figure {
     // Field 
     protected final long id; 
     protected Double price;
+    protected FigureMaterial figureMaterial;
     protected FigureStatus status;
     protected Creator creator;
     protected Coater coater;
@@ -27,19 +29,7 @@ public abstract class Figure {
  
     // Constructor 
     public Figure(){
-        // Secure enough for current id generation
-        id = Instant.now().getEpochSecond();
-        price = 0.0;
-        this.status = FigureStatus.INSPRUCE;
-        // this.creator = 
-        this.coater = new ColorCoater();
-    }
-
-    public Figure(Double price){
-        // Secure enough for current id generation
-        id = Instant.now().getEpochSecond();
-        this.price = price;
-        this.status = FigureStatus.INSPRUCE;
+        this.id = Instant.now().getEpochSecond();
     }
 
     // Method 
@@ -49,6 +39,10 @@ public abstract class Figure {
 
     public Double getPrice() {
         return price;
+    }
+
+    public FigureMaterial getFigureMaterial() {
+        return figureMaterial;
     }
 
     public FigureStatus getStatus() {
@@ -90,9 +84,13 @@ public abstract class Figure {
     public Weapon getWeapon() {
         return weapon;
     }
-
+    
     public void setPrice(Double price) {
         this.price = price;
+    }
+
+    public void setFigureMaterial(FigureMaterial figureMaterial) {
+        this.figureMaterial = figureMaterial;
     }
 
     public void setStatus(FigureStatus status) {

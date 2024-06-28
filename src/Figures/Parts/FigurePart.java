@@ -1,9 +1,9 @@
-package Figures.Parts;
+package figures.parts;
 
 import java.util.ArrayList;
 import java.util.Collection;
 
-import Figures.Coats.*;
+import figures.coats.*;
 
 public class FigurePart{
     // FIELD 

@@ -1,5 +1,5 @@
-package Figures.Parts;
+package figures.parts;
 
-public class Vehicle {
+public class Vehicle extends FigurePart {
     
 }

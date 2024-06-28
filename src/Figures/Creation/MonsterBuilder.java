@@ -1,11 +1,13 @@
-package Figures.Creation;
+package figures.creation;
 
-import Figures.Parts.Arm;
-import Figures.Parts.Body;
-import Figures.Parts.Head;
-import Figures.Parts.Leg;
-import Figures.Parts.Weapon;
-import Figures.Types.Monster;
+import figures.FigureMaterial;
+import figures.FigureStatus;
+import figures.parts.Arm;
+import figures.parts.Body;
+import figures.parts.Head;
+import figures.parts.Leg;
+import figures.parts.Weapon;
+import figures.types.Monster;
 
 public class MonsterBuilder extends FigureBuilder {
     // FIELD 
@@ -15,6 +17,20 @@ public class MonsterBuilder extends FigureBuilder {
         this.monster = new Monster();
     }
     // METHOD 
+        @Override
+    public void setPrice(Double price) {
+        monster.setPrice(price);
+    }
+    @Override
+    public void setFigureMaterial(FigureMaterial figureMaterial) {
+        monster.setFigureMaterial(figureMaterial);
+    }
+
+    @Override
+    public void setFigureStatus(FigureStatus figureStatus) {
+        monster.setStatus(figureStatus);
+    }
+ 
     @Override
     public void reset() {
         this.monster = new Monster();

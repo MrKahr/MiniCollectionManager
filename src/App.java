@@ -1,4 +1,4 @@
-import Interfaces.UserInterface.SimpleCLI;
+import interfaces.userInterface.SimpleCLI;
 
 public class App {
     public static void main(String[] args) throws Exception {

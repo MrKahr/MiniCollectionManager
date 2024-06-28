@@ -1,14 +1,14 @@
-package Figures.Creation;
+package figures.creation;
 
-import FigureExpections.IllegalDuplicateElementException;
-import Figures.Coats.Coat;
-import Figures.Coats.Color;
-import Figures.Coats.Primer;
-import Figures.Parts.FigurePart;
+import figures.coats.Coat;
+import figures.coats.Primer;
+import figures.parts.FigurePart;
+import figureExceptions.IllegalDuplicateElementException;
 
 public class PrimerCoater extends Coater {
     // FIELD
     // CONSTRUCTOR 
+    PrimerCoater(){}
     // METHOD 
     @Override
      public void applyCoat(FigurePart figurePart, Coat coat){

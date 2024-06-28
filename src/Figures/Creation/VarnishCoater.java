@@ -1,14 +1,14 @@
-package Figures.Creation;
+package figures.creation;
 
-import FigureExpections.IllegalDuplicateElementException;
-import Figures.Coats.Coat;
-import Figures.Coats.Color;
-import Figures.Coats.Varnish;
-import Figures.Parts.FigurePart;
+import figures.coats.Coat;
+import figures.coats.Varnish;
+import figures.parts.FigurePart;
+import figureExceptions.IllegalDuplicateElementException;
 
 public class VarnishCoater extends Coater {
     // FIELD
     // CONSTRUCTOR 
+    VarnishCoater(){}
     // METHOD 
     @Override
      public void applyCoat(FigurePart figurePart, Coat coat){

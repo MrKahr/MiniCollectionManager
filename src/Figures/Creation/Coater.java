@@ -1,6 +1,6 @@
-package Figures.Creation;
-import Figures.Coats.Coat;
-import Figures.Parts.FigurePart;
+package figures.creation;
+import figures.coats.Coat;
+import figures.parts.FigurePart;
 
 /*Attempted decorator pattern */
 public abstract class Coater implements Creator {

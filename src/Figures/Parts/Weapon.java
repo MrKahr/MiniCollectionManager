@@ -1,5 +1,5 @@
-package Figures.Parts;
+package figures.parts;
 
-public class Weapon {
+public class Weapon extends FigurePart {
     
 }

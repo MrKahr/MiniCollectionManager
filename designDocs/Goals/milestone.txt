@@ -34,7 +34,11 @@ Github is updated with purpose of the app, milestones, planned features (markdow
 System has unit tests for every and class combination (look at Gabriela's testing strategy)
 System displays unit test coverage
 System provides appropriate exceptions for all classes. 
-System system tests batch script 
+System system tests batch script
+
+g - Research figures
+Find the 5 most popular figure system 
+Check which categories they have/which elements each figure 
 
 x - GettingInTheSwingOfThings  
 System can show simple UI of current collection (Java swing)

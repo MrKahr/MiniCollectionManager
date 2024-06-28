@@ -1,9 +1,9 @@
-package Figures.Creation;
+package figures.creation;
 
-import FigureExpections.IllegalDuplicateElementException;
-import Figures.Coats.Coat;
-import Figures.Coats.Color;
-import Figures.Parts.FigurePart;
+import figures.coats.Coat;
+import figures.coats.Color;
+import figures.parts.FigurePart;
+import figureExceptions.IllegalDuplicateElementException;
 
 public class ColorCoater extends Coater{
     // FIELD

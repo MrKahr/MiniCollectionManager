@@ -1,4 +1,4 @@
-package Figures.Coats;
+package figures.coats;
 
 public abstract class Coat {
     // Field

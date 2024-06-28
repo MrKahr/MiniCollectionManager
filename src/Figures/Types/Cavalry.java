@@ -1,17 +1,12 @@
-package Figures.Types;
+package figures.types;
 
-import Figures.Parts.Vehicle;
+import figures.parts.Vehicle;
 
 public class Cavalry extends Figure {
         // FIELD 
         private Vehicle vehicle;
 
         // CONSTRUCTOR 
-        public Cavalry(Double price, Vehicle vehicle){
-            super(price);
-            this.vehicle = vehicle;
-        }
-
         public Cavalry(){}
 
         // METHOD 
