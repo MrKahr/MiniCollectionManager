@@ -2,15 +2,14 @@ package figures.creation;
 
 import figures.FigureMaterial;
 import figures.FigureStatus;
-import figures.parts.Arm;
-import figures.parts.Body;
-import figures.parts.Head;
-import figures.parts.Leg;
-import figures.parts.Weapon;
+import figures.parts.*;
+import figures.types.Figure;
 
 public abstract class FigureBuilder implements Creator {
     //FIELD 
+    protected Figure figure;
     // METHOD 
+    public abstract void setFigure(Figure figure);
     public abstract void setPrice(Double price);
     public abstract void setFigureMaterial(FigureMaterial figureMaterial);
     public abstract void setFigureStatus(FigureStatus figureStatus);

@@ -10,4 +10,7 @@ public class Cavalry extends Figure {
         public Cavalry(){}
 
         // METHOD 
+        public void setVehicle(Vehicle vehicle) {
+            this.vehicle = vehicle;
+        }
 }

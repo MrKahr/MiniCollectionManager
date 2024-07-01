@@ -1,4 +1,4 @@
-package FigureExpections;
+package figureExceptions;
 
 public class IllegalDuplicateElementException extends RuntimeException {
     public IllegalDuplicateElementException() {

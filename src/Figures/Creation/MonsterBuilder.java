@@ -7,80 +7,86 @@ import figures.parts.Body;
 import figures.parts.Head;
 import figures.parts.Leg;
 import figures.parts.Weapon;
+import figures.types.Figure;
 import figures.types.Monster;
 
 public class MonsterBuilder extends FigureBuilder {
     // FIELD 
-    private Monster monster;
     // CONSTRUCTOR 
     MonsterBuilder(){
-        this.monster = new Monster();
+        this.figure = new Monster();
     }
     // METHOD 
-        @Override
+    @Override
+    public void setFigure(Figure figure) {
+        this.figure = figure;
+        
+    }
+
+    @Override
     public void setPrice(Double price) {
-        monster.setPrice(price);
+        figure.setPrice(price);
     }
     @Override
     public void setFigureMaterial(FigureMaterial figureMaterial) {
-        monster.setFigureMaterial(figureMaterial);
+        figure.setFigureMaterial(figureMaterial);
     }
 
     @Override
     public void setFigureStatus(FigureStatus figureStatus) {
-        monster.setStatus(figureStatus);
+        figure.setStatus(figureStatus);
     }
  
     @Override
     public void reset() {
-        this.monster = new Monster();
+        figure = new Monster();
     }
 
     @Override
     public void setCreator(Creator creator){
-        monster.setCreator(creator);
+        figure.setCreator(creator);
     }
 
     @Override
     public void setCoater(Coater coater){
-        monster.setCoater(coater);
+        figure.setCoater(coater);
     }
 
     @Override
     public void setBody(Body body){
-        monster.setBody(body);
+        figure.setBody(body);
     }
     
     @Override 
     public void setHead(Head head){
-        monster.setHead(head);
+        figure.setHead(head);
     }
 
     @Override
     public void setRightArm(Arm arm){
-        monster.setRightarm(arm);
+        figure.setRightarm(arm);
     }
 
     @Override 
     public void setLeftArm(Arm arm){
-        monster.setLeftarm(arm);
+        figure.setLeftarm(arm);
     }
 
     @Override
     public void setRightLeg(Leg leg){
-        monster.setRightleg(leg);
+        figure.setRightleg(leg);
     }
 
     @Override
     public void setLeftLeg(Leg leg){
-        monster.setLeftleg(leg);
+        figure.setLeftleg(leg);
     }
     public void setWeapon(Weapon weapon){
-        monster.setWeapon(weapon);
+        figure.setWeapon(weapon);
     }
 
     public Monster getResult() {
-        return this.monster;
+        return (Monster)this.figure;
     }
 
 }

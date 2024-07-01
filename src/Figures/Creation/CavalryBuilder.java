@@ -6,81 +6,88 @@ import figures.parts.Arm;
 import figures.parts.Body;
 import figures.parts.Head;
 import figures.parts.Leg;
+import figures.parts.Vehicle;
 import figures.parts.Weapon;
 import figures.types.Cavalry;
+import figures.types.Figure;
 
 public class CavalryBuilder extends FigureBuilder {
     // FIELD 
-    private Cavalry cavalry;
     // CONSTRUCTOR 
-    CavalryBuilder(){
-        this.cavalry = new Cavalry();
-    }
+    CavalryBuilder(){}
     // METHOD 
     @Override
+    public void setFigure(Figure figure) {
+        this.figure = figure;
+    }
+    @Override
     public void setPrice(Double price) {
-        cavalry.setPrice(price);
+        figure.setPrice(price);
     }
     @Override
     public void setFigureMaterial(FigureMaterial figureMaterial) {
-        cavalry.setFigureMaterial(figureMaterial);
+        figure.setFigureMaterial(figureMaterial);
     }
 
     @Override
     public void setFigureStatus(FigureStatus figureStatus) {
-        cavalry.setStatus(figureStatus);
+        figure.setStatus(figureStatus);
     }
  
     @Override
     public void reset() {
-        this.cavalry = new Cavalry();
+        this.figure = new Cavalry();
     }
 
     @Override
     public void setCreator(Creator creator){
-        cavalry.setCreator(creator);
+        figure.setCreator(creator);
     }
 
     @Override
     public void setCoater(Coater coater){
-        cavalry.setCoater(coater);
+        figure.setCoater(coater);
     }
 
     @Override
     public void setBody(Body body){
-        cavalry.setBody(body);
+        figure.setBody(body);
     }
     
     @Override 
     public void setHead(Head head){
-        cavalry.setHead(head);
+        figure.setHead(head);
     }
 
     @Override
     public void setRightArm(Arm arm){
-        cavalry.setRightarm(arm);
+        figure.setRightarm(arm);
     }
 
     @Override 
     public void setLeftArm(Arm arm){
-        cavalry.setLeftarm(arm);
+        figure.setLeftarm(arm);
     }
 
     @Override
     public void setRightLeg(Leg leg){
-        cavalry.setRightleg(leg);
+        figure.setRightleg(leg);
     }
 
     @Override
     public void setLeftLeg(Leg leg){
-        cavalry.setLeftleg(leg);
+        figure.setLeftleg(leg);
     }
     @Override
     public void setWeapon(Weapon weapon){
-        cavalry.setWeapon(weapon);
+        figure.setWeapon(weapon);
+    }
+
+    public void setVehicle(Vehicle vehicle){
+        ((Cavalry)figure).setVehicle(vehicle);
     }
 
     public Cavalry getResult() {
-        return this.cavalry;
+        return (Cavalry)this.figure;
     }
 }
